@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Arcade Car Racer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="hud">
+      <div id="score">Score: 0</div>
+      <div id="speed">Speed: 0 km/h</div>
+    </div>
+
+    <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+    <div id="start-screen" class="overlay">
+      <h1>Arcade Driver</h1>
+      <p>Use <strong>Left/Right Arrows</strong> or <strong>A/D</strong> to steer.</p>
+      <p>Dodge traffic and drive as far as you can!</p>
+      <button id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-over-screen" class="overlay hidden">
+      <h1>Game Over!</h1>
+      <p id="final-score">Your Score: 0</p>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
